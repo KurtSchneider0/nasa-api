@@ -1,0 +1,54 @@
+body {
+  background-color: #282c34;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 5%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: calc(22px + 2vmin);
+  color: white;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2px + 2vmin);
+  color: white;
+  width: 75%;
+  margin: 1vw 1vh 1vw 1vh;
+}
+
+.description-mars-rover {
+  text-align: center;
+  font-size: calc(2px + 2vmin);
+  color: white;
+  width: 75%;
+  margin: 1vw 1vh 1vw 1vh;
+}
+
+.link {
+  color: #61dafb;
+}
