@@ -66,7 +66,7 @@ export class FetchNasaNeoWs extends React.Component {
         {this.state.asteroids.map(asteroid => (
           <li key={shortid.generate()}>
             The asteroid <strong>{asteroid.name}</strong> has an estimated diameter between <strong>{asteroid.estimated_diameter.kilometers.estimated_diameter_min}</strong> and <strong>{asteroid.estimated_diameter.kilometers.estimated_diameter_max} km</strong>.<br/><strong>{asteroid.is_potentially_hazardous_asteroid ? "It is potentially hazardous " : "It isn't hazardous "}</strong> and it will have approached us at <strong>{asteroid.close_approach_data[0].close_approach_date_full}</strong> with a velocity of <strong>{asteroid.close_approach_data[0].relative_velocity.kilometers_per_hour} km/h</strong> but will luckily 
-            miss us by <strong>{asteroid.close_approach_data[0].miss_distance.kilometers} km </strong>.
+            miss us by <strong>{asteroid.close_approach_data[0].miss_distance.kilometers} km</strong>.
           </li>
         ))}
         </ul>
