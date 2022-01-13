@@ -13,7 +13,7 @@ export class FetchNasaApod extends React.Component {
   }
   
   async componentDidMount() {
-    const url = "https://api.nasa.gov/planetary/apod?api_key=fG2PZvawEUDIqN5X2Sp4qNSRMD6rK14Ei9463Npe";
+    const url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
     const response = await fetch(url);
     const data = await response.json();
     this.setState({img: data.url, expl: data.explanation, loading: false});
@@ -46,7 +46,7 @@ export class FetchNasaNeoWs extends React.Component {
   async componentDidMount() {
     let date = new Date();
     date = date.toISOString().split('T')[0];
-    const url = "https://api.nasa.gov/neo/rest/v1/feed?start_date=" + date + "&api_key=fG2PZvawEUDIqN5X2Sp4qNSRMD6rK14Ei9463Npe";
+    const url = "https://api.nasa.gov/neo/rest/v1/feed?start_date=" + date + "&api_key=DEMO_KEY";
     const response = await fetch(url);
     const data = await response.json();
     const shuffled = data.near_earth_objects[date].sort(() => 0.5 - Math.random()); 
